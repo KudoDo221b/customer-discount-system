@@ -1,4 +1,6 @@
-def calculate_discount(total_amount, current_order_amount=0):
-    if total_amount + current_order_amount >= 50000000:
+def calculate_discount(donhangtruoc, donhanghtai=0):
+    if donhangtruoc >= 50000000:
+        return 0.1
+    if donhangtruoc + donhanghtai >= 50000000:
         return 0.1
     return 0
